@@ -5,15 +5,23 @@
  * per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
  */
 
+// Creo referenza
+var numeroLista = document.getElementById('elenco-numeri');
+// Variabile vuota
+var daStampare = '';
 
 for (var i = 1; i <= 100; i++) {
+    var numero = i;
+
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log('FizzBuzz');
+        daStampare += '<li>FizzBuzz</li>';
     } else if (i % 3 === 0) {
-        console.log('Fizz');
+        daStampare += '<li>Fizz</li>';
     } else if (i % 5 === 0) {
-        console.log('Buzz')
+        daStampare += '<li>Buzz</li>';
     } else {
-        console.log(i);
+        daStampare += '<li>' + numero + '</li>';
     }
 }
+
+numeroLista.innerHTML = daStampare;
