@@ -10,6 +10,7 @@ var numeroLista = document.getElementById('elenco-numeri');
 // Variabile vuota
 var daStampare = '';
 
+// Ciclo per generare numeri
 for (var i = 1; i <= 100; i++) {
     var numero = i;
 
@@ -24,4 +25,5 @@ for (var i = 1; i <= 100; i++) {
     }
 }
 
+// Assegno contenuto agli oggetti della lista
 numeroLista.innerHTML = daStampare;
